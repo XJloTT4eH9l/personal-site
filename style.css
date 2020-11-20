@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+body { 
+		 margin: 0;
+		 font-family: 'Montserrat', sans-serif;
+		 background-color: grey;
+		 }
+
+		h1,h2,h3{
+			margin: 0;
+			font-variant: small-caps;
+		}
+
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+}
+
+hr{
+	border-style: dotted none none;
+	width: 10%;
+	border-color: black;
+	border-width: 20px;
+}
+
+p{
+	line-height: 25px;
+}
+
+li{
+	font-weight: bold;
+}
+	.container{
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+header {
+		background-color: #ebd4d4;
+		width: 100%;
+}
+
+.header__image {
+		width: 100%;
+		max-width: 200px; 
+		height: 100%;
+		max-height: 300px;
+		padding-right:40px;
+		
+}
+
+.header__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 0;
+}
+
+.loved__books {
+	height: 300px;
+	padding-top: 50px;
+	background-color:#898b8a ;
+}
+
+
+
+.education__1{
+	width: 600px
+}
+
+.education__2{
+	width: 600px;
+}
+.education__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#contacts{
+	padding-top: 30px;
+	background-color: #ebd4d4;
+	height: 120px;
+	padding-bottom: 70px;
+}
+.contact__1{
+	margin-left: 540px;
+}
+
+.contact__2{
+	height: 100vh;
+	background-image: url(contact-photo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%; 
+}
+.contact__form{
+	margin-top: 200px; 
+	text-align: center;
+}
+.heading {
+	text-align: center;
+}
+.lable__2{
+	margin-left: 3px;
+}
+.input__1{
+	margin-left: 3px;
+	border-radius: 5px;
+}
+.education__21{
+	display: flex;
+	align-items: center;
+	margin-left: 300px;
+}
+.column__1,.column__2{
+	display: flex;
+	flex-direction: column;
+}
+.column__1{
+	margin-right: 30px;
+}
+.education__h{
+	margin-left: 300px;
+}
+.responsive{
+	margin-left: 540px;
+}
+.parallax{
+	margin-left: 540px;
+}

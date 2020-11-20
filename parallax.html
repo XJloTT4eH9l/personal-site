@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>parallax</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.parallax{
+			background: url(img.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;
+		}
+
+		.box{
+			margin-bottom: 300px;
+			width: 200px;
+			height: 200px;
+			background-color: black;
+
+		}
+		.box:last-child{
+			margin-bottom: 0;
+		}
+		@media only screen and (min-width: 320px) and (max-width: 989px){
+			.parallax{
+				background-attachment: scroll;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="parallax">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>responsive</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width ">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<style>
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+h1,h2,h3,h4{
+	margin: 0;
+}
+
+/* Container 
+-------------------- */
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+@media (max-width: 1200px){
+	.container{
+		max-width: 970px;
+	}
+}
+@media (max-width: 992px){
+	.container{
+		max-width: 750px;
+	}
+}
+@media (max-width: 767px){
+	.container{
+		max-width: none;
+	}
+}
+
+/* Header
+-------------------- */
+.header{
+	padding: 35px 0;
+	height: 500px;
+	width: 100%;
+	background: url(header__image.jpg)center
+	no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.heading__1{
+	color: #fff;
+	font-weight: bold;
+	font-size: 40px;
+
+}
+.heading__2{
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 100px;
+}
+
+/* Navigation
+-------------------- */
+
+.nav{
+	font-size: 20px;
+	display: flex;
+}
+ .nav__link{
+ 	margin-left: 20px;
+ 	text-transform: uppercase;
+	transition: opacity 0.2s linear;
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.75;
+
+ }
+ .nav__link:hover {
+ 	text-decoration: underline;
+ 	opacity: 1;
+ }
+ .nav__link:first-child{
+ 	margin-left: 0;
+ }
+
+ /* Button
+-------------------- */
+.btn {
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 48px;
+
+	border: 3px solid #afb1b4;
+	border-radius: 7px;
+
+	font-size: 30px;
+	color: #afb1b4;
+
+	text-decoration: none;
+
+	transition: background 0.2s linear,
+	 color 0.2s linear;
+}
+.btn:hover {
+	background-color: #4b96a1;
+	color: #fff;
+}
+
+/* Main section
+-------------------- */
+
+.main__section{
+	height: 900px;
+	background-color: black;
+	margin: 75px 100px;
+}
+.yellow_p{
+	height: 200px;
+	background-color: black;
+	margin-bottom: 75px;
+	color: white;
+	font-size: 20px;
+}
+.orange_boxes{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.orange__box1{
+	height: 400px;
+	width: 48%;
+}
+.orange__box2{
+	height: 400px;
+	width: 48%;
+}
+
+.heading__3{
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+.description__inner{
+	display: flex;
+	justify-content: space-between;
+}
+.d-box{
+	display: inline-block;
+	width: 48%;
+	height: 100px;
+	color: #fff;
+	padding-top: 40px;
+	font-size: 20px;
+}
+
+/* prefooter */
+.prefooter__section{
+	height: 40px;
+	background-color: silver;
+}
+/* footer */
+footer{
+	height: 100px;
+	background-color: black;
+	position: relative;
+}
+.footer__text {
+	position: absolute;
+	top: 50px;
+	color: #fff;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+	</style>
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__logo">
+				<h1 class="heading__1">Aesthetics</h1>
+			</div>
+			<nav class="nav">
+				<a class="nav__link" href="#">home</a>
+				<a class="nav__link" href="#">about me</a>
+				<a class="nav__link" href="#">portfolio</a>
+				<a class="nav__link" href="#">contact me</a>
+			</nav>
+		</div>
+		<div header__intro>
+			<h1 class="heading__2">Nature aesthetics</h1>
+				<div class="button" align="center">
+					<a class="btn" href="#">Read more</a>
+				</div>
+		</div>
+	</div>
+</header>
+
+<section class="main__section">
+	<div class="container">
+		<h3 class="heading__3">About us</h3>
+		<p class="yellow_p">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+			<div class="orange_boxes">
+				<div class="orange__box1">
+					<img class="image1" src="section__image1.jpg" height="400px"
+					width="100%">
+				</div>
+				<div class="orange__box2">
+					<img src="section__image2.jpg" height="400px" width="100%">
+				</div>
+			</div>
+
+			<div class="description">
+				<div class="description__inner">
+					<span class="d-box">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias. </span>
+
+					<span class="d-box">t harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod.</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="prefooter__section"></div>
+
+	<footer>
+		<h4 class="footer__text">Copyright © 2020 Aesthetics.com</h4>
+	</footer>
+</body>
+</html>
